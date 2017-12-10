@@ -4,7 +4,7 @@ import com.qaagility.javaee.HelloServletController;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
-
+import static org.junit.Assert.assertEquals;
 public class HelloServletControllerTest{
    
   @Before
@@ -17,7 +17,7 @@ public class HelloServletControllerTest{
   public void testController(){
                
        HelloServletController controller = new HelloServletController(); 
-        assertTrue(controller.returnName().contains("Subhasis"));
+        assertEquals("Pass", controller.returnName() , "Subhasis");
   }
   /*
   

@@ -7,6 +7,7 @@ import org.junit.After;
 import static org.junit.Assert.assertEquals;
 public class HelloServletControllerTest{
    
+    HelloServletController controller ;
   @Before
     public void setUp() {
         System.out.println("Before Testing");
@@ -16,9 +17,16 @@ public class HelloServletControllerTest{
   @Test
   public void testController(){
                
-       HelloServletController controller = new HelloServletController(); 
+      controller = new HelloServletController(); 
         assertEquals("Pass", controller.returnName() , "Subhasis");
   }
+   
+   @Test
+  public void testHello(){
+               
+     controller = new HelloServletController(); 
+        assertEquals("Pass", controller.returnHello() , "Hello Subhasis");
+}
   /*
   
   @Test

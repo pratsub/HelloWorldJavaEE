@@ -28,7 +28,7 @@ public class HelloServletTest{
   public void testServlet(){
                
         request.addParameter("userName", "Subhasis");
-        servlet.doPostrequest, response);
+        servlet.doPost(request, response);
         assertTrue(response.getWriter().toString().contains("Subhasis"));
   }
   /*

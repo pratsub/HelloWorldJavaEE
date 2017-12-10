@@ -1,6 +1,6 @@
 package com.qaagility.javaee;
 
-import com.qaagility.javaee;.HelloServletController;
+import com.qaagility.javaee.HelloServletController;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
